@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #48A30012;
+}
+.container{
+ background-color: #FBFBFB;
+ width: 660px;
+ height: auto;
+ margin: auto;
+ align-items: center;
+ padding: 15px 0px 0px 25px;
+}
+
+h1{
+    
+    text-align: center;
+    color: rgb(33, 167, 33);
+}
+h1 span{
+    color: rgb(86, 24, 24)
+}
+.progress-level{
+    color:rgba(133, 133, 133, 1);
+}
+
+.sun-icon{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.progressbar{
+    background-color: #48A3001A;
+    width: 90%;
+    height: 30px;
+   border-radius: 15px;
+   
+
+}
+.progressvalue{
+    background-color: #48A300;
+    width: 0;
+    height:100%;
+    border-radius: 15px;
+    color: #FBFBFB;
+    font-size: 12px;  
+    display: flex;
+    align-items: center;  
+    font-size: 10px;
+    font-weight: 500px;
+    overflow: hidden;
+    transition: width 0.4s ease-in-out ;
+
+}
+.progressvalue span{
+    padding-left: 20px;
+    min-width: max-content;
+}
+.paragraph{
+    width: 320px;
+    height: 22px;
+    color: #FF5151;
+    font-size: 14px;
+    font-weight: 400px;
+     display: none;  
+}
+
+  
+
+
+
+.div1{
+    width: 570px;
+    height: 82px;
+    border: 1px solid #e7dddd;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 38px;
+
+
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #D9D9D9 ;
+    border-radius: 50%;
+    margin: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ input{
+    width: 364px;
+    height: 28px; 
+    border: 1px solid white;
+    border: none;
+     outline: none; 
+     flex-grow: 1;
+     font-size: 15px;
+     font-weight: 500;
+     
+
+}
+
+.paragraph1{
+    
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer{
+    color: #858585;
+    margin-top: 50px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+ input::placeholder{
+    color: #D9D9D9;
+} 
+
+.completed .circle{
+    background-color: #48A300;
+    border-color: #48A300;
+}
+.completed .tick{
+    display: block;
+}
+
+.tick{
+    display: none;
+}
+.completed input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+.show-error .paragraph{
+    display: block;
+}
